@@ -29,14 +29,14 @@
   <g clip-path="url(#cpMC4wMHwxNTg3Mi4wMHwwLjAwfDg5MjguMDA=)"/>
   <image x="495" y="832" xlink:href="Equal-Earth-Physical-Relief-No-Halos-150E-South-Up.png"/>
   <text style="fill: rgb(0, 0, 0); font-family: 'DejaVu Sans'; font-size: 42.7px; font-weight: 700; white-space: pre;">
-    <tspan x="14120" y="7760">South Up, Aotearoa Centred, Equal-Earth Projection Map</tspan>
-    <tspan>By Terence Eden: </tspan>
-    <tspan style="font-family: 'DejaVu Sans Mono';">https://shkspr.mobi/blog/map</tspan>
-    <tspan>Public Domain data from:</tspan>
-    <tspan style="font-family: 'DejaVu Sans Mono';">https://equal-earth.com</tspan>
-    <tspan style="font-family: 'DejaVu Sans Mono';">https://naturalearthdata.com</tspan>
-    <tspan>CC BY-SA data from:</tspan>
-    <tspan style="font-family: 'DejaVu Sans Mono';">https://openstreetmap.org</tspan>
+    <tspan x="14120" y="7750" dy="0em"   >South Up, Aotearoa Centred, Equal-Earth Projection Map</tspan>
+    <tspan x="14120" y="7750" dy="1.25em">By Terence Eden:</tspan>
+    <tspan x="14120" y="7750" dy="2.5em"  style="font-family: 'DejaVu Sans Mono';">https://shkspr.mobi/blog/map</tspan>
+    <tspan x="14120" y="7750" dy="3.75em">Public Domain data from:</tspan>
+    <tspan x="14120" y="7750" dy="5em"    style="font-family: 'DejaVu Sans Mono';">https://equal-earth.com</tspan>
+    <tspan x="14120" y="7750" dy="6.25em" style="font-family: 'DejaVu Sans Mono';">https://naturalearthdata.com</tspan>
+    <tspan x="14120" y="7750" dy="7.5em" >CC BY-SA data from:</tspan>
+    <tspan x="14120" y="7750" dy="8.75em" style="font-family: 'DejaVu Sans Mono';">https://openstreetmap.org</tspan>
   </text>
   <g clip-path="url(#cpMC4wMHwxNTg3Mi4wMHw0NjYuNzh8ODQ2MS4yMg==)">
     <polyline points="7254.18,830.17 7253.10,832.92 7249.89,841.16 7244.61,854.81 7237.36,873.74 7228.29,897.77 7217.56,926.72 7205.35,960.36 7191.86,998.45 7177.30,1040.75 7161.87,1087.02 7145.74,1137.01 7129.12,1190.51 7112.15,1247.29 7094.98,1307.15 7077.75,1369.91 7060.55,1435.39 7043.50,1503.44 7026.66,1573.89 7010.10,1646.62 6993.87,1721.49 6978.02,1798.39 6962.58,1877.20 6947.58,1957.82 6933.03,2040.14 6918.96,2124.07 6905.39,2209.53 6892.31,2296.42 6879.75,2384.66 6867.71,2474.18 6856.20,2564.90 6845.23,2656.74 6834.80,2749.63 6824.92,2843.51 6815.59,2938.32 6806.82,3033.97 6798.61,3130.42 6790.97,3227.60 6783.91,3325.45 6777.42,3423.91 6771.51,3522.93 6766.18,3622.44 6761.44,3722.41 6757.28,3822.76 6753.71,3923.45 6750.74,4024.42 6748.36,4125.63 6746.57,4227.01 6745.38,4328.52 6744.79,4430.11 6744.79,4531.73 6745.38,4633.32 6746.57,4734.83 6748.36,4836.21 6750.74,4937.42 6753.71,5038.39 6757.28,5139.08 6761.44,5239.43 6766.18,5339.40 6771.51,5438.91 6777.42,5537.93 6783.91,5636.39 6790.97,5734.24 6798.61,5831.42 6806.82,5927.87 6815.59,6023.52 6824.92,6118.33 6834.80,6212.21 6845.23,6305.10 6856.20,6396.94 6867.71,6487.66 6879.75,6577.18 6892.31,6665.42 6905.39,6752.31 6918.96,6837.77 6933.03,6921.70 6947.58,7004.02 6962.58,7084.64 6978.02,7163.45 6993.87,7240.35 7010.10,7315.22 7026.66,7387.95 7043.50,7458.40 7060.55,7526.45 7077.75,7591.93 7094.98,7654.69 7112.15,7714.55 7129.12,7771.33 7145.74,7824.83 7161.87,7874.82 7177.30,7921.09 7191.86,7963.39 7205.35,8001.48 7217.56,8035.12 7228.29,8064.07 7237.36,8088.10 7244.61,8107.03 7249.89,8120.68 7253.10,8128.92 7254.18,8131.67 " style="stroke-width: 2.13; stroke: #808080; stroke-dasharray: 11.38,11.38;"/>
