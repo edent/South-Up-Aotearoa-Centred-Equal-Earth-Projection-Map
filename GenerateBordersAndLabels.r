@@ -2,6 +2,7 @@ library(tidyverse)
 library(rnaturalearth)
 library(rnaturalearthdata)
 library(sf)
+library(xml2)
 
 pdf(NULL)	#	Stop the autogeneration of "Rplots.pdf"
 
@@ -75,6 +76,29 @@ ggplot(
 
 #	Save as reference PNG and editable SVG
 #	992 arrived at by trial and error
-#ggsave("Equal-Earth-150E-South-Up-Borders-Labels.png", width = (16*992), height = (9*992), units = "px", limitsize = FALSE, bg='NA')
+
+filename = "Equal-Earth-150E-South-Up-Borders-Labels"
+#ggsave( paste(filename, ".png", sep=""), width = (16*992), height = (9*992), units = "px", limitsize = FALSE, bg='NA')
 #	3.125 to correct the size, 1.333 for the conversion from 90dpi to 96dpi
-ggsave("Equal-Earth-150E-South-Up-Borders-Labels.svg", width = (16*992*3.125*(4/3)), height = (9*992*3.125*(4/3)), units = "px", limitsize = FALSE, bg='NA')
+ggsave( paste(filename, ".svg", sep=""), width = (16*992*3.125*(4/3)), height = (9*992*3.125*(4/3)), units = "px", limitsize = FALSE, bg='NA')
+
+#	Add the background map
+##	Define file paths
+input_file  <- paste(filename, ".svg", sep="")
+output_file <- paste(filename, ".svg", sep="")
+
+##	Read the SVG file
+svg <- read_xml(input_file)
+
+##	Create the map background element
+new_element <- '<image x="495" y="832" xlink:href="Equal-Earth-Physical-Relief-No-Halos-150E-South-Up.png"/>'
+
+##	Parse the new element
+new_element <- read_xml(new_element)
+
+##	Add it after the background rectangle
+target_element <- xml_find_first(svg, "//d1:rect")
+xml_add_sibling(target_element, new_element, .after = TRUE)
+
+##	Save it
+write_xml(svg, output_file)
