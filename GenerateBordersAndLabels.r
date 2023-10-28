@@ -94,11 +94,30 @@ svg <- read_xml(input_file)
 new_element <- '<image x="495" y="832" xlink:href="Equal-Earth-Physical-Relief-No-Halos-150E-South-Up.png"/>'
 
 ##	Parse the new element
-new_element <- read_xml(new_element)
+new_element <- read_xml(new_element, as_html = FALSE)
 
 ##	Add it after the background rectangle
-target_element <- xml_find_first(svg, "//d1:rect")
+target_element <- xml_find_first(svg, "//d1:rect") #	"d1" because it has a namespace. Otherwise the library barfs
 xml_add_sibling(target_element, new_element, .after = TRUE)
+
+#	Add the colophon
+colophon_element <- '<text style="fill: rgb(0, 0, 0); font-family: \'DejaVu Sans\'; font-size: 42.7px; font-weight: 700; white-space: pre;">
+	<tspan x="14120" y="7760">South Up, Aotearoa Centred, Equal-Earth Projection Map</tspan>
+	<tspan>By Terence Eden: </tspan>
+	<tspan style="font-family: \'DejaVu Sans Mono\';">https://shkspr.mobi/blog/map</tspan>
+	<tspan>Public Domain data from:</tspan>
+	<tspan style="font-family: \'DejaVu Sans Mono\';">https://equal-earth.com</tspan>
+	<tspan style="font-family: \'DejaVu Sans Mono\';">https://naturalearthdata.com</tspan>
+	<tspan>CC BY-SA data from:</tspan>
+	<tspan style="font-family: \'DejaVu Sans Mono\';">https://openstreetmap.org</tspan>
+</text>'
+
+##	Parse the new element
+colophon_element <- read_xml( gsub("[\r\n]", "", colophon_element), as_html = FALSE)
+
+##	Add it after the background image
+target_element <- xml_find_first(svg, "//d1:g") #	"d1" because it has a namespace. Otherwise the library barfs
+xml_add_sibling(target_element, colophon_element, .after = TRUE)
 
 ##	Save it
 write_xml(svg, output_file)
