@@ -80,7 +80,15 @@ ggplot(
 filename = "Equal-Earth-150E-South-Up-Borders-Labels"
 #ggsave( paste(filename, ".png", sep=""), width = (16*992), height = (9*992), units = "px", limitsize = FALSE, bg='NA')
 #	3.125 to correct the size, 1.333 for the conversion from 90dpi to 96dpi
-ggsave( paste(filename, ".svg", sep=""), width = (16*992*3.125*(4/3)), height = (9*992*3.125*(4/3)), units = "px", limitsize = FALSE, bg='NA')
+ggsave( 
+	paste(filename, ".svg", sep=""), 
+	width  = (16*992*3.125*(4/3)), 
+	height = ( 9*992*3.125*(4/3)), 
+	units = "px", 
+	bg = 'NA',
+	limitsize     = FALSE,	#	Prevent large filesize warning 
+	fix_text_size = FALSE	#	Make text editable
+)
 
 #	Add the background map
 ##	Define file paths
