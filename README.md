@@ -1,6 +1,6 @@
 # South Up, Aotearoa Centred, Equal-Earth Projection Map
 
-For more information, see [https://shkspr.mobi/blog/map](https://shkspr.mobi/blog/maps).
+For more information, see [https://shkspr.mobi/blog/maps](https://shkspr.mobi/blog/maps).
 
 ## Buy The Map!
 
