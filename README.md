@@ -4,6 +4,11 @@ For more information, see [https://shkspr.mobi/blog/maps](https://shkspr.mobi/bl
 
 ## Buy The Map!
 
+* [Buy the Country Name Map](https://www.redbubble.com/shop/ap/154196690)
+* [Buy the Emoji Flag Map](https://www.redbubble.com/shop/ap/154196862)
+
+
+
 ## Copyright
 
 All of the [Equal Earth data has this copyright](https://equal-earth.com):
